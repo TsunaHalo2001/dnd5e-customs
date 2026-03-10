@@ -187,13 +187,42 @@ Humana
 Comandante<br/>
 Humana
     >];
-    "Zodge" [
+    "Darmin Zodge" [
         color=green, 
         style="filled", 
         fillcolor=lightgreen, 
-        label=<<b>Zodge</b><br/><br/>
+        label=<<b>Darmin Zodge</b><br/><br/>
 Capitan<br/>
 Humano
+    >];
+    "Tarina" [
+        color=green, 
+        style="filled", 
+        fillcolor=lightgreen, 
+        label=<<b>Tarina</b><br/><br/>
+Espia<br/>
+    >];
+    "Klim Jhasso" [
+        color=red, 
+        style="filled", 
+        fillcolor=lightcoral, 
+        label=<<b>Klim Jhasso</b><br/><br/>
+Humano
+    >];
+    "Vendetta Kress" [
+        color=green, 
+        style="filled", 
+        fillcolor=lightgreen, 
+        label=<<b>Vendetta Kress</b>
+    >];
+    "Laraelra Thundreth" [
+        color=green, 
+        style="filled", 
+        fillcolor=lightgreen, 
+        label=<<b>Laraelra Thundreth</b><br/><br/>
+Maga<br/>
+Capitan<br/>
+Humana
     >];
     // Familias
     "Familia Varhampur" [
@@ -338,9 +367,27 @@ Puerta de Baldur
     "Thalamra Varhampur" -> "Zariel" [label="discipulo de", color=darkgreen, style="dashed"];
 
     // Relaciones de Zodge
-    "Zodge" -> "Puno ardiente" [dir=none, label="pertenece a", color=green];
-    "Zodge" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
-    "Zodge" -> "Morthos Torment" [label="conoce", color=lightgreen];
-    "Zodge" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
-    "Zodge" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
+    "Darmin Zodge" -> "Puno ardiente" [dir=none, label="pertenece a", color=green];
+    "Darmin Zodge" -> "Thorim Oathkeeper" [dir=none, label="conoce", color=lightgreen];
+    "Darmin Zodge" -> "Morthos Torment" [dir=none, label="conoce", color=lightgreen];
+    "Darmin Zodge" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
+    "Darmin Zodge" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
+
+    // Relaciones de Tarina
+    "Tarina" -> "Thorim Oathkeeper" [dir=none, label="conoce", color=lightgreen];
+    "Tarina" -> "Morthos Torment" [label="conoce", color=lightgreen];
+    "Tarina" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
+    "Tarina" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
+
+    // Relaciones de Vendetta Kress
+    "Vendetta Kress" -> "Thorim Oathkeeper" [dir=none, label="conoce", color=lightgreen];
+    "Vendetta Kress" -> "Morthos Torment" [dir=none, label="conoce", color=lightgreen];
+    "Vendetta Kress" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
+    "Vendetta Kress" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
+
+    // Relaciones de Klim Jhasso
+    "Klim Jhasso" -> "Thorim Oathkeeper" [dir=none, label="conoce", color=red];
+    "Klim Jhasso" -> "Morthos Torment" [dir=none, label="conoce", color=red];
+    "Klim Jhasso" -> "Elowen Dradir" [dir=none, label="conoce", color=red];
+    "Klim Jhasso" -> "Xenoviguroth" [dir=none, label="conoce", color=red];
 }
