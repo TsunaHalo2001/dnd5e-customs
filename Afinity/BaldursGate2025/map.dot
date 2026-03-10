@@ -1,7 +1,111 @@
 digraph Relaciones {
-    node [shape=circle];
-    "NPC_A" -> "PC_1" [label="confía", color=green];
-    "NPC_B" -> "NPC_A" [label="odia por traición", color=red, style=dashed];
-    "Facción_X" [shape=diamond, color=blue];
-    "NPC_A" -> "Facción_X" [label="miembro"];
+    layout=neato;
+    overlap=prism;
+    splines=true;
+    mindist=0.8;
+    esep=0.2;
+    node [shape=circle, style=filled];
+
+    "1" [color=darkred, label="Relacion\nnegativa"];
+    "2" [color=darkgreen, label="Relacion\npositiva"];
+    "3" [color=gray, style=dashed, label="Relacion no\nconocida\npor Thorim"];
+    "1" -> "2" -> "3";
+
+    // Personajes
+    "Thorim Oathkeeper" [
+        color=green, 
+        style=filled, 
+        fillcolor=lightgreen,
+        label=<<b>Thorim Oathkeeper</b><br/><br/>
+    Paladin<br/>
+    Enano<br/>
+        Legal Bueno
+    >];
+
+    "Morthos Torment" [
+        color=red, 
+        style=filled, 
+        fillcolor=lightcoral, 
+        label=<<b>Morthos Torment</b><br/><br/>
+    Guerrero<br/>
+        Tiefling
+    >];
+    "Elowen Dradir" [
+        color=red, 
+        style=filled, 
+        fillcolor=lightcoral, 
+        label=<<b>Elowen Dradir</b><br/><br/>
+    Druida<br/>
+        Enano
+    >];
+    "Xenoviguroth" [
+        color=red, 
+        style=filled, 
+        fillcolor=darkgray, 
+        label=<<b>Xenoviguroth</b><br/><br/>
+    Mago<br/>
+    Gnomo<br/>
+        Muerto
+    >];
+    "Oogway paso veloz" [
+        color=green, 
+        style=filled, 
+        fillcolor=lightgreen, 
+        label=<<b>Oogway paso veloz</b><br/><br/>
+    Monje<br/>
+    Tortuga<br/>
+        Neutral Bueno
+    >];
+
+    // NPCs
+    "Morlock Varhampur" [
+        color=red, 
+        style=filled, 
+        fillcolor=lightcoral, 
+        label=<<b>Morlock Varhampur</b><br/><br/>
+    Barbaro<br/>
+        Humano
+    >];
+
+    // Familias
+    "Familia Varhampur" [shape=diamond, color=blue, fillcolor=lightblue, label="Familia\nVarhampur"];
+
+    // Relaciones de Thorim Oathkeeper
+    "Thorim Oathkeeper" -> "Morthos Torment" [label="confía", color=green];
+    "Thorim Oathkeeper" -> "Elowen Dradir" [label="confía", color=green];
+    "Thorim Oathkeeper" -> "Xenoviguroth" [label="confía", color=black];
+    "Thorim Oathkeeper" -> "Oogway paso veloz" [label="confía", color=green];
+    "Thorim Oathkeeper" -> "Morlock Varhampur" [label="conoce", color=lightgreen];
+
+    // Relaciones de Morthos Torment
+    "Morthos Torment" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
+    "Morthos Torment" -> "Elowen Dradir" [label="conoce", color=lightgreen];
+    "Morthos Torment" -> "Xenoviguroth" [label="conoce", color=black];
+    "Morthos Torment" -> "Morlock Varhampur" [label="conoce", color=lightgreen];
+
+    // Relaciones de Elowen Dradir
+    "Elowen Dradir" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
+    "Elowen Dradir" -> "Morthos Torment" [label="conoce", color=lightgreen];
+    "Elowen Dradir" -> "Xenoviguroth" [label="conoce", color=black];
+    "Elowen Dradir" -> "Morlock Varhampur" [label="conoce", color=lightgreen];
+
+    // Relaciones de Xenoviguroth
+    "Xenoviguroth" -> "Thorim Oathkeeper" [label="conoce", color=black];
+    "Xenoviguroth" -> "Morthos Torment" [label="conoce", color=black];
+    "Xenoviguroth" -> "Elowen Dradir" [label="conoce", color=black];
+    "Xenoviguroth" -> "Morlock Varhampur" [label="conoce", color=black];
+
+    // Relaciones de Oogway paso veloz
+    "Oogway paso veloz" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
+    "Oogway paso veloz" -> "Morthos Torment" [label="conoce", color=lightgreen];
+    "Oogway paso veloz" -> "Elowen Dradir" [label="conoce", color=lightgreen];
+    "Oogway paso veloz" -> "Morlock Varhampur" [label="conoce", color=lightgreen];
+
+    // Relaciones de Morlock Varhampur
+    "Morlock Varhampur" -> "Familia Varhampur" [label="pertenece a", color=blue];
+    "Morlock Varhampur" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
+    "Morlock Varhampur" -> "Morthos Torment" [label="conoce", color=lightgreen];
+    "Morlock Varhampur" -> "Elowen Dradir" [label="conoce", color=lightgreen];
+    "Morlock Varhampur" -> "Xenoviguroth" [label="conoce", color=black];
+    "Morlock Varhampur" -> "Oogway paso veloz" [label="conoce", color=lightgreen];
 }
