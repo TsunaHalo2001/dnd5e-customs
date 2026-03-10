@@ -213,7 +213,7 @@ Puerta de Baldur
     >];
 
     // Mapa
-    "Elturgard" -> "Puerta de Baldur" [dir=none, label="vecinos"];
+    "Elturgard" -> "Puerta de Baldur" [dir=none];
 
     // Relaciones del lore
     // Relaciones de Zariel
