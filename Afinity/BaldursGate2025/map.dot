@@ -9,7 +9,7 @@ digraph Relaciones {
     "1" [color=darkred, label="Relacion\nnegativa"];
     "2" [color=darkgreen, label="Relacion\npositiva"];
     "3" [color=gray, style=dashed, label="Relacion no\nconocida\npor Thorim"];
-    "1" -> "2" -> "3";
+    "1" -> "2" -> "3" [dir=none];
 
     // Personajes
     "Thorim Oathkeeper" [
@@ -67,16 +67,18 @@ digraph Relaciones {
         Diablillo
     >
     ];
-    "Elturel Alto Superintendente" [
+    "Thavius Kreeg" [
         color=red,
         style="filled, dashed",
         fillcolor=lightcoral,
-        label=<<b>Elturel Alto<br/>Superintendente</b>>
+        label=<<b>Thavius Kreeg</b><br/><br/>
+        Alto Superintendente
+    >
     ];
     "Morlock Varhampur" [
         color=blue, 
         style=filled, 
-        fillcolor=lightblue, 
+        fillcolor=lightgreen, 
         label=<<b>Morlock Varhampur</b><br/><br/>
     Barbaro<br/>
         Humano
@@ -107,9 +109,15 @@ digraph Relaciones {
             Avernus
         >
     ];
+    "Puerta de Baldur" [
+        shape=rectangle,
+        color=orange,
+        fillcolor=lightyellow,
+        label=<<b>Puerta de Baldur</b><br/>>
+    ];
 
     // Relaciones del lore
-    "Zariel" -> "Elturel Alto Superintendente" [dir=none, label="trato", color=red, style=dashed];
+    "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=red, style=dashed];
 
     // Relaciones de Thorim Oathkeeper
     "Thorim Oathkeeper" -> "Morthos Torment" [label="confía", color=green];
@@ -141,7 +149,7 @@ digraph Relaciones {
 
     // Relaciones de Morlock Varhampur
     "Morlock Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=red];
-    "Morlock Varhampur" -> "Amrik Varhampur" [dir=none, label="hermano", color=darkgreen];
+    "Morlock Varhampur" -> "Amrik Varhampur" [dir=none, label="hermano", color=darkred];
 
     // Relaciones de Amrik Varhampur
     "Amrik Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=green];
