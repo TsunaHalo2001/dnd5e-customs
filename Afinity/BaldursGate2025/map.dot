@@ -179,7 +179,14 @@ Humano
         label=<<b>Reya Mantlemorn</b><br/><br/>
 Humana
     >];
-
+    "Liara Portyr" [
+        color=green, 
+        style="filled, dashed", 
+        fillcolor=lightgreen, 
+        label=<<b>Liara Portyr</b><br/><br/>
+Comandante<br/>
+Humana
+    >];
     // Familias
     "Familia Varhampur" [
         shape=diamond, 
@@ -259,6 +266,10 @@ Puerta de Baldur
     "Bane" -> "Tres muertos" [dir=none, label="dios", color=green];
     "Bhaal" -> "Tres muertos" [dir=none, label="dios", color=green];
     "Myrkul" -> "Tres muertos" [dir=none, label="dios", color=green];
+
+    "Liara Portyr" -> "Dillard Portyr" [label="nieta", color=lightgreen, style="dashed"];
+    "Dillard Portyr" -> "Liara Portyr" [label="abuela", color=lightgreen, style="dashed"];
+    "Liara Portyr" -> "Puno ardiente" [dir=none, label="comanda", color=lightgreen, style="dashed"];
 
     // Relaciones de Thorim Oathkeeper
     "Thorim Oathkeeper" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
