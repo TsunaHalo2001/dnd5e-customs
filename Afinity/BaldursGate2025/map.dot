@@ -278,6 +278,14 @@ Puerta de Baldur
 Duques<br/>
 Puerta de Baldur
     >];
+    "Low Lantern" [
+        shape=hexagon,
+        color=cyan,
+        fillcolor=lightgreen,
+        label=<<b>Low Lantern</b><br/><br/>
+Barco<br/>
+Puerta de Baldur
+    >];
 
     // Mapa
     "Elturgard" -> "Puerta de Baldur" [dir=none];
@@ -390,4 +398,12 @@ Puerta de Baldur
     "Klim Jhasso" -> "Morthos Torment" [dir=none, label="conoce", color=red];
     "Klim Jhasso" -> "Elowen Dradir" [dir=none, label="conoce", color=red];
     "Klim Jhasso" -> "Xenoviguroth" [dir=none, label="conoce", color=red];
+
+    // Relaciones de Laraelra Thundreth
+    "Laraelra Thundreth" -> "Low Lantern" [dir=none, label="comanda", color=darkgreen];
+
+    "Laraelra Thundreth" -> "Thorim Oathkeeper" [dir=none, label="conoce", color=lightgreen];
+    "Laraelra Thundreth" -> "Morthos Torment" [dir=none, label="conoce", color=lightcoral];
+    "Laraelra Thundreth" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
+    "Laraelra Thundreth" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
 }
