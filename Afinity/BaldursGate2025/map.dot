@@ -23,23 +23,23 @@ digraph Relaciones {
     >];
 
     "Morthos Torment" [
-        color=red, 
+        color=green, 
         style=filled, 
-        fillcolor=lightcoral, 
+        fillcolor=lightgreen, 
         label=<<b>Morthos Torment</b><br/><br/>
     Guerrero<br/>
         Tiefling
     >];
     "Elowen Dradir" [
-        color=red, 
+        color=green, 
         style=filled, 
-        fillcolor=lightcoral, 
+        fillcolor=lightgreen, 
         label=<<b>Elowen Dradir</b><br/><br/>
     Druida<br/>
         Enano
     >];
     "Xenoviguroth" [
-        color=red, 
+        color=green, 
         style=filled, 
         fillcolor=darkgray, 
         label=<<b>Xenoviguroth</b><br/><br/>
@@ -58,54 +58,91 @@ digraph Relaciones {
     >];
 
     // NPCs
+    "Zariel" [
+        color=red,
+        style="filled, dashed",
+        fillcolor=lightcoral,
+        label=<<b>Zariel</b><br/><br/>
+    Señor de Avernus<br/>
+        Diablillo
+    >
+    ];
+    "Elturel Alto Superintendente" [
+        color=red,
+        style="filled, dashed",
+        fillcolor=lightcoral,
+        label=<<b>Elturel Alto<br/>Superintendente</b>>
+    ];
     "Morlock Varhampur" [
-        color=red, 
+        color=blue, 
         style=filled, 
-        fillcolor=lightcoral, 
+        fillcolor=lightblue, 
         label=<<b>Morlock Varhampur</b><br/><br/>
     Barbaro<br/>
         Humano
     >];
+    "Amrik Varhampur" [
+        color=red, 
+        style=filled, 
+        fillcolor=darkgray, 
+        label=<<b>Amrik Varhampur</b><br/><br/>
+    Humano<br/>
+        Muerto
+    >];
 
     // Familias
-    "Familia Varhampur" [shape=diamond, color=blue, fillcolor=lightblue, label="Familia\nVarhampur"];
+    "Familia Varhampur" [
+        shape=diamond, 
+        color=purple, 
+        fillcolor=lightcoral, 
+        label="Familia\nVarhampur"
+    ];
+
+    // Ciudades
+    "Elturel" [
+        shape=rectangle, 
+        color=orange, 
+        fillcolor=lightyellow, 
+        label=<<b>Elturel</b><br/>
+            Avernus
+        >
+    ];
+
+    // Relaciones del lore
+    "Zariel" -> "Elturel Alto Superintendente" [dir=none, label="trato", color=red, style=dashed];
 
     // Relaciones de Thorim Oathkeeper
     "Thorim Oathkeeper" -> "Morthos Torment" [label="confía", color=green];
     "Thorim Oathkeeper" -> "Elowen Dradir" [label="confía", color=green];
     "Thorim Oathkeeper" -> "Xenoviguroth" [label="confía", color=black];
-    "Thorim Oathkeeper" -> "Oogway paso veloz" [label="confía", color=green];
-    "Thorim Oathkeeper" -> "Morlock Varhampur" [label="conoce", color=lightgreen];
+    "Thorim Oathkeeper" -> "Oogway paso veloz" [label="confía", color=lightgreen];
+    "Thorim Oathkeeper" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Morthos Torment
     "Morthos Torment" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
-    "Morthos Torment" -> "Elowen Dradir" [label="conoce", color=lightgreen];
-    "Morthos Torment" -> "Xenoviguroth" [label="conoce", color=black];
-    "Morthos Torment" -> "Morlock Varhampur" [label="conoce", color=lightgreen];
+    "Morthos Torment" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
+    "Morthos Torment" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
+    "Morthos Torment" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
+    "Morthos Torment" -> "Oogway paso veloz" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Elowen Dradir
     "Elowen Dradir" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
-    "Elowen Dradir" -> "Morthos Torment" [label="conoce", color=lightgreen];
-    "Elowen Dradir" -> "Xenoviguroth" [label="conoce", color=black];
-    "Elowen Dradir" -> "Morlock Varhampur" [label="conoce", color=lightgreen];
+    "Elowen Dradir" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
+    "Elowen Dradir" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
+    "Elowen Dradir" -> "Oogway paso veloz" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Xenoviguroth
     "Xenoviguroth" -> "Thorim Oathkeeper" [label="conoce", color=black];
-    "Xenoviguroth" -> "Morthos Torment" [label="conoce", color=black];
-    "Xenoviguroth" -> "Elowen Dradir" [label="conoce", color=black];
-    "Xenoviguroth" -> "Morlock Varhampur" [label="conoce", color=black];
+    "Xenoviguroth" -> "Morlock Varhampur" [dir=none, label="conoce", color=black];
 
     // Relaciones de Oogway paso veloz
     "Oogway paso veloz" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
-    "Oogway paso veloz" -> "Morthos Torment" [label="conoce", color=lightgreen];
-    "Oogway paso veloz" -> "Elowen Dradir" [label="conoce", color=lightgreen];
-    "Oogway paso veloz" -> "Morlock Varhampur" [label="conoce", color=lightgreen];
+    "Oogway paso veloz" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Morlock Varhampur
-    "Morlock Varhampur" -> "Familia Varhampur" [label="pertenece a", color=blue];
-    "Morlock Varhampur" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
-    "Morlock Varhampur" -> "Morthos Torment" [label="conoce", color=lightgreen];
-    "Morlock Varhampur" -> "Elowen Dradir" [label="conoce", color=lightgreen];
-    "Morlock Varhampur" -> "Xenoviguroth" [label="conoce", color=black];
-    "Morlock Varhampur" -> "Oogway paso veloz" [label="conoce", color=lightgreen];
+    "Morlock Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=red];
+    "Morlock Varhampur" -> "Amrik Varhampur" [dir=none, label="hermano", color=darkgreen];
+
+    // Relaciones de Amrik Varhampur
+    "Amrik Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=green];
 }
