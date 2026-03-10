@@ -117,6 +117,20 @@ Gran Duque de<br/>
 Puerta de Baldur<br/>
 Desaparecido
     >];
+    "Belynne Stelmane" [
+        color=red,
+        style="filled",
+        fillcolor=lightcoral,
+        label=<<b>Belynne Stelmane</b><br/><br/>
+Duque<br/>
+    >];
+    "Dillard Portyr" [
+        color=red,
+        style="filled",
+        fillcolor=lightcoral,
+        label=<<b>Dillard Portyr</b><br/><br/>
+Duque<br/>
+    >];
     "Bane" [
         color=red,
         style="filled",
@@ -140,6 +154,7 @@ Desaparecido
         style=filled, 
         fillcolor=darkgray, 
         label=<<b>Thalamra Varhampur</b><br/><br/>
+Duque<br/>
 Humano
     >];
     "Morlock Varhampur" [
@@ -211,6 +226,14 @@ Puerta de Baldur
 Culto<br/>
 Puerta de Baldur
     >];
+    "Consejo de los cuatro" [
+        shape=hexagon,
+        color=cyan,
+        fillcolor=lightgreen,
+        label=<<b>Consejo de los cuatro</b><br/><br/>
+Duques<br/>
+Puerta de Baldur
+    >];
 
     // Mapa
     "Elturgard" -> "Puerta de Baldur" [dir=none];
@@ -224,7 +247,15 @@ Puerta de Baldur
     "Zariel" -> "Asmodeus" [label="sirve a", color=green, style="dashed"];
     "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=green, style="dashed"];
 
+    "Thavius Kreeg" -> "Elturel" [dir=none, label="gobernante de", color=green, style="dashed"];
+
+    // Relaciones de Puerta de Baldur
     "Puno ardiente" -> "Puerta de Baldur" [dir=none, label="opera en", color=cyan];
+    "Consejo de los cuatro" -> "Puerta de Baldur" [dir=none, label="rige", color=cyan];
+    "Belynne Stelmane" -> "Consejo de los cuatro" [dir=none, label="pertenece a", color=green];
+    "Dillard Portyr" -> "Consejo de los cuatro" [dir=none, label="pertenece a", color=green];
+    "Ulder Ravengard" -> "Consejo de los cuatro" [dir=none, label="pertenece a", color=green];
+
     "Bane" -> "Tres muertos" [dir=none, label="dios", color=green];
     "Bhaal" -> "Tres muertos" [dir=none, label="dios", color=green];
     "Myrkul" -> "Tres muertos" [dir=none, label="dios", color=green];
@@ -280,6 +311,8 @@ Puerta de Baldur
 
     // Relaciones de Thalamra Varhampur
     "Thalamra Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=darkgreen];
+    "Thalamra Varhampur" -> "Consejo de los cuatro" [dir=none, label="pertenece a", color=green];
+
     "Thalamra Varhampur" -> "Morlock Varhampur" [label="madre", color=darkred];
     "Thalamra Varhampur" -> "Amrik Varhampur" [label="madre", color=darkred];
     "Thalamra Varhampur" -> "Tres muertos" [label="financia", color=darkgreen];
