@@ -122,6 +122,13 @@ Humano
         label=<<b>Amrik Varhampur</b><br/><br/>
 Humano
     >];
+    "Reya Mantlemorn" [
+        color=green, 
+        style=filled, 
+        fillcolor=lightgreen, 
+        label=<<b>Reya Mantlemorn</b><br/><br/>
+Humana
+    >];
 
     // Familias
     "Familia Varhampur" [
@@ -189,6 +196,7 @@ Puerta de Baldur
     "Thorim Oathkeeper" -> "Xenoviguroth" [label="confía", color=black];
     "Thorim Oathkeeper" -> "Oogway paso veloz" [label="confía", color=lightgreen];
     "Thorim Oathkeeper" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
+    "Thorim Oathkeeper" -> "Reya Mantlemorn" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Morthos Torment
     "Morthos Torment" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
@@ -198,6 +206,7 @@ Puerta de Baldur
     "Morthos Torment" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
     "Morthos Torment" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
     "Morthos Torment" -> "Oogway paso veloz" [dir=none, label="conoce", color=lightgreen];
+    "Morthos Torment" -> "Reya Mantlemorn" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Elowen Dradir
     "Elowen Dradir" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
@@ -206,19 +215,23 @@ Puerta de Baldur
     "Elowen Dradir" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
     "Elowen Dradir" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
     "Elowen Dradir" -> "Oogway paso veloz" [dir=none, label="conoce", color=lightgreen];
+    "Elowen Dradir" -> "Reya Mantlemorn" [dir=none, label="conoce", color=green];
 
     // Relaciones de Xenoviguroth
     "Xenoviguroth" -> "Thorim Oathkeeper" [label="conoce", color=black];
     "Xenoviguroth" -> "Morlock Varhampur" [dir=none, label="conoce", color=black];
+    "Xenoviguroth" -> "Reya Mantlemorn" [dir=none, label="conoce", color=black];
 
     // Relaciones de Oogway paso veloz
     "Oogway paso veloz" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
     "Oogway paso veloz" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
+    "Oogway paso veloz" -> "Reya Mantlemorn" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Morlock Varhampur
     "Morlock Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=darkred];
     "Morlock Varhampur" -> "Amrik Varhampur" [dir=none, label="hermano", color=darkred];
     "Morlock Varhampur" -> "Thalamra Varhampur" [label="hijo", color=darkred];
+    "Morlock Varhampur" -> "Reya Mantlemorn" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Amrik Varhampur
     "Amrik Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=green];
@@ -229,4 +242,5 @@ Puerta de Baldur
     "Thalamra Varhampur" -> "Morlock Varhampur" [label="madre", color=darkred];
     "Thalamra Varhampur" -> "Amrik Varhampur" [label="madre", color=darkred];
     "Thalamra Varhampur" -> "Tres muertos" [label="financia", color=darkgreen];
+    "Thalamra Varhampur" -> "Zariel" [label="discipulo de", color=darkgreen, style="dashed"];
 }
