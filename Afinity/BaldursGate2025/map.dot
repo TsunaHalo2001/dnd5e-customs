@@ -73,6 +73,34 @@ Diablillo
         label=<<b>Yael</b><br/><br/>
 General
     >];
+    "Lulu" [
+        color=red,
+        style="filled, dashed",
+        fillcolor=lightcoral,
+        label=<<b>Lulu</b><br/><br/>
+Almofante
+    >];
+    "Olanthius" [
+        color=red,
+        style="filled, dashed",
+        fillcolor=lightcoral,
+        label=<<b>Olanthius</b><br/><br/>
+General
+    >];
+    "Haruman" [
+        color=red,
+        style="filled, dashed",
+        fillcolor=lightcoral,
+        label=<<b>Haruman</b><br/><br/>
+General
+    >];
+    "Asmodeus" [
+        color=red,
+        style="filled, dashed",
+        fillcolor=lightcoral,
+        label=<<b>Asmodeus</b><br/><br/>
+Señor Supremo<br/>de los Nueve<br/>Infiernos
+    >];
     "Thavius Kreeg" [
         color=red,
         style="filled, dashed",
@@ -150,7 +178,7 @@ Humana
         shape=rectangle, 
         color=orange, 
         fillcolor=lightyellow, 
-        label=<<b>Elturel</b>
+        label=<<b>Elturel</b><br/><br/>
 Avernus
     >];
     "Puerta de Baldur" [
@@ -163,7 +191,7 @@ Avernus
         shape=rectangle,
         color=orange,
         fillcolor=lightyellow,
-        label=<<b>Elturgard</b>>
+        label=<<b>Nacion de<br/>Elturgard</b>>
     ];
 
     // Gremios
@@ -185,16 +213,22 @@ Puerta de Baldur
     >];
 
     // Mapa
-    "Elturel" -> "Elturgard" [dir=none];
-    "Elturgard" -> "Puerta de Baldur" [dir=none];
+    "Elturel" -> "Elturgard" [dir=none, label="pertenece a"];
+    "Elturgard" -> "Puerta de Baldur" [dir=none, label="vecinos"];
 
     // Relaciones del lore
-    "Yael" -> "Zariel" [label="sirve a", color=red, style="dashed"];
-    "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=red, style="dashed"];
+    // Relaciones de Zariel
+    "Yael" -> "Zariel" [label="sirve a", color=green, style="dashed"];
+    "Lulu" -> "Zariel" [label="sirve a", color=green, style="dashed"];
+    "Olanthius" -> "Zariel" [label="sirve a", color=green, style="dashed"];
+    "Haruman" -> "Zariel" [label="sirve a", color=green, style="dashed"];
+    "Zariel" -> "Asmodeus" [label="sirve a", color=green, style="dashed"];
+    "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=green, style="dashed"];
+
     "Puno ardiente" -> "Puerta de Baldur" [dir=none, label="opera en", color=cyan];
-    "Bane" -> "Tres muertos" [dir=none, label="dios", color=red];
-    "Bhaal" -> "Tres muertos" [dir=none, label="dios", color=red];
-    "Myrkul" -> "Tres muertos" [dir=none, label="dios", color=red];
+    "Bane" -> "Tres muertos" [dir=none, label="dios", color=green];
+    "Bhaal" -> "Tres muertos" [dir=none, label="dios", color=green];
+    "Myrkul" -> "Tres muertos" [dir=none, label="dios", color=green];
 
     // Relaciones de Thorim Oathkeeper
     "Thorim Oathkeeper" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
