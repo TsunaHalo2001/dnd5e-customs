@@ -1,0 +1,7 @@
+digraph Relaciones {
+    node [shape=circle];
+    "NPC_A" -> "PC_1" [label="confía", color=green];
+    "NPC_B" -> "NPC_A" [label="odia por traición", color=red, style=dashed];
+    "Facción_X" [shape=diamond, color=blue];
+    "NPC_A" -> "Facción_X" [label="miembro"];
+}
