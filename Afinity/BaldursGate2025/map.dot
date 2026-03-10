@@ -66,6 +66,13 @@ Neutral Bueno
 Señor de Avernus<br/>
 Diablillo
     >];
+    "Yael" [
+        color=red,
+        style="filled, dashed",
+        fillcolor=lightcoral,
+        label=<<b>Yael</b><br/><br/>
+General
+    >];
     "Thavius Kreeg" [
         color=red,
         style="filled, dashed",
@@ -182,6 +189,7 @@ Puerta de Baldur
     "Elturgard" -> "Puerta de Baldur" [dir=none];
 
     // Relaciones del lore
+    "Yael" -> "Zariel" [label="sirve a", color=red, style="dashed"];
     "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=red, style="dashed"];
     "Puno ardiente" -> "Puerta de Baldur" [dir=none, label="opera en", color=cyan];
     "Bane" -> "Tres muertos" [dir=none, label="dios", color=red];
