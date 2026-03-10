@@ -17,9 +17,9 @@ digraph Relaciones {
         style=filled, 
         fillcolor=lightgreen,
         label=<<b>Thorim Oathkeeper</b><br/><br/>
-    Paladin<br/>
-    Enano<br/>
-        Legal Bueno
+Paladin<br/>
+Enano<br/>
+Legal Bueno
     >];
 
     "Morthos Torment" [
@@ -27,34 +27,34 @@ digraph Relaciones {
         style=filled, 
         fillcolor=lightgreen, 
         label=<<b>Morthos Torment</b><br/><br/>
-    Guerrero<br/>
-        Tiefling
+Guerrero<br/>
+Tiefling
     >];
     "Elowen Dradir" [
         color=green, 
         style=filled, 
         fillcolor=lightgreen, 
         label=<<b>Elowen Dradir</b><br/><br/>
-    Druida<br/>
-        Enano
+Druida<br/>
+Enano
     >];
     "Xenoviguroth" [
         color=green, 
         style=filled, 
         fillcolor=darkgray, 
         label=<<b>Xenoviguroth</b><br/><br/>
-    Mago<br/>
-    Gnomo<br/>
-        Muerto
+Mago<br/>
+Gnomo<br/>
+Muerto
     >];
     "Oogway paso veloz" [
         color=green, 
         style=filled, 
         fillcolor=lightgreen, 
         label=<<b>Oogway paso veloz</b><br/><br/>
-    Monje<br/>
-    Tortuga<br/>
-        Neutral Bueno
+Monje<br/>
+Tortuga<br/>
+Neutral Bueno
     >];
 
     // NPCs
@@ -63,33 +63,64 @@ digraph Relaciones {
         style="filled, dashed",
         fillcolor=lightcoral,
         label=<<b>Zariel</b><br/><br/>
-    Señor de Avernus<br/>
-        Diablillo
-    >
-    ];
+Señor de Avernus<br/>
+Diablillo
+    >];
     "Thavius Kreeg" [
         color=red,
         style="filled, dashed",
         fillcolor=lightcoral,
         label=<<b>Thavius Kreeg</b><br/><br/>
-        Alto Superintendente
-    >
-    ];
+Alto Superintendente
+    >];
+    "Ulder Ravengard" [
+        color=red,
+        style="filled",
+        fillcolor=lightcoral,
+        label=<<b>Ulder Ravengard</b><br/><br/>
+Gran Duque de<br/>
+Puerta de Baldur<br/>
+Desaparecido
+    >];
+    "Bane" [
+        color=red,
+        style="filled",
+        fillcolor=darkgray,
+        label=<<b>Bane</b>
+    >];
+    "Bhaal" [
+        color=red,
+        style="filled",
+        fillcolor=darkgray,
+        label=<<b>Bhaal</b>
+    >];
+    "Myrkul" [
+        color=red,
+        style="filled",
+        fillcolor=darkgray,
+        label=<<b>Myrkul</b>
+    >];
+    "Thalamra Varhampur" [
+        color=red, 
+        style=filled, 
+        fillcolor=darkgray, 
+        label=<<b>Thalamra Varhampur</b><br/><br/>
+Humano
+    >];
     "Morlock Varhampur" [
-        color=blue, 
+        color=green, 
         style=filled, 
         fillcolor=lightgreen, 
         label=<<b>Morlock Varhampur</b><br/><br/>
-    Barbaro<br/>
-        Humano
+Barbaro<br/>
+Humano
     >];
     "Amrik Varhampur" [
         color=red, 
         style=filled, 
         fillcolor=darkgray, 
         label=<<b>Amrik Varhampur</b><br/><br/>
-    Humano<br/>
-        Muerto
+Humano
     >];
 
     // Familias
@@ -105,21 +136,54 @@ digraph Relaciones {
         shape=rectangle, 
         color=orange, 
         fillcolor=lightyellow, 
-        label=<<b>Elturel</b><br/>
-            Avernus
-        >
-    ];
+        label=<<b>Elturel</b>
+Avernus
+    >];
     "Puerta de Baldur" [
         shape=rectangle,
         color=orange,
         fillcolor=lightyellow,
-        label=<<b>Puerta de Baldur</b><br/>>
+        label=<<b>Puerta de Baldur</b>>
+    ];
+    "Elturgard" [
+        shape=rectangle,
+        color=orange,
+        fillcolor=lightyellow,
+        label=<<b>Elturgard</b>>
     ];
 
+    // Gremios
+    "Puno ardiente" [
+        shape=hexagon,
+        color=cyan,
+        fillcolor=lightgreen,
+        label=<<b>Puño ardiente</b><br/><br/>
+Mercenarios<br/>
+Puerta de Baldur
+    >];
+    "Tres muertos" [
+        shape=hexagon,
+        color=cyan,
+        fillcolor=lightgreen,
+        label=<<b>Tres muertos</b><br/><br/>
+Culto<br/>
+Puerta de Baldur
+    >];
+
+    // Mapa
+    "Elturel" -> "Elturgard" [dir=none];
+    "Elturgard" -> "Puerta de Baldur" [dir=none];
+
     // Relaciones del lore
-    "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=red, style=dashed];
+    "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=red, style="dashed"];
+    "Puno ardiente" -> "Puerta de Baldur" [dir=none, label="opera en", color=cyan];
+    "Bane" -> "Tres muertos" [dir=none, label="dios", color=red];
+    "Bhaal" -> "Tres muertos" [dir=none, label="dios", color=red];
+    "Myrkul" -> "Tres muertos" [dir=none, label="dios", color=red];
 
     // Relaciones de Thorim Oathkeeper
+    "Thorim Oathkeeper" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
+
     "Thorim Oathkeeper" -> "Morthos Torment" [label="confía", color=green];
     "Thorim Oathkeeper" -> "Elowen Dradir" [label="confía", color=green];
     "Thorim Oathkeeper" -> "Xenoviguroth" [label="confía", color=black];
@@ -127,6 +191,8 @@ digraph Relaciones {
     "Thorim Oathkeeper" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Morthos Torment
+    "Morthos Torment" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
+    
     "Morthos Torment" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
     "Morthos Torment" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
     "Morthos Torment" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
@@ -134,6 +200,8 @@ digraph Relaciones {
     "Morthos Torment" -> "Oogway paso veloz" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Elowen Dradir
+    "Elowen Dradir" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
+
     "Elowen Dradir" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
     "Elowen Dradir" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
     "Elowen Dradir" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
@@ -148,9 +216,17 @@ digraph Relaciones {
     "Oogway paso veloz" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Morlock Varhampur
-    "Morlock Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=red];
+    "Morlock Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=darkred];
     "Morlock Varhampur" -> "Amrik Varhampur" [dir=none, label="hermano", color=darkred];
+    "Morlock Varhampur" -> "Thalamra Varhampur" [label="hijo", color=darkred];
 
     // Relaciones de Amrik Varhampur
     "Amrik Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=green];
+    "Amrik Varhampur" -> "Thalamra Varhampur" [label="hijo", color=darkred];
+
+    // Relaciones de Thalamra Varhampur
+    "Thalamra Varhampur" -> "Familia Varhampur" [dir=none, label="pertenece a", color=darkgreen];
+    "Thalamra Varhampur" -> "Morlock Varhampur" [label="madre", color=darkred];
+    "Thalamra Varhampur" -> "Amrik Varhampur" [label="madre", color=darkred];
+    "Thalamra Varhampur" -> "Tres muertos" [label="financia", color=darkgreen];
 }
