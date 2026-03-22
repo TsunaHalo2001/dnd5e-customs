@@ -224,6 +224,21 @@ Maga<br/>
 Capitan<br/>
 Humana
     >];
+
+    // Mazmorra Varhampur
+    "Satiir Thione-Hhune" [
+        color=green,
+        style=filled,
+        fillcolor=lightgreen,
+        label=<<b>Satiir Thione-Hhune</b>>
+    ];
+    "Falaster Fisk" [
+        color=green,
+        style=filled,
+        fillcolor=lightgreen,
+        label=<<b>Falaster Fisk</b>>
+    ];
+
     // Familias
     "Familia Varhampur" [
         shape=diamond, 
@@ -406,4 +421,15 @@ Puerta de Baldur
     "Laraelra Thundreth" -> "Morthos Torment" [dir=none, label="conoce", color=lightcoral];
     "Laraelra Thundreth" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
     "Laraelra Thundreth" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
+
+    // Relaciones de la mazmorra Varhampur
+    "Satiir Thione-Hhune" -> "Thorim Oathkeeper" [dir=none, label="conoce", color=lightgreen];
+    "Satiir Thione-Hhune" -> "Morthos Torment" [dir=none, label="conoce", color=lightgreen];
+    "Satiir Thione-Hhune" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
+    "Satiir Thione-Hhune" -> "Oogway paso veloz" [dir=none, label="conoce", color=lightgreen];
+
+    "Falaster Fisk" -> "Thorim Oathkeeper" [dir=none, label="conoce", color=lightgreen];
+    "Falaster Fisk" -> "Morthos Torment" [dir=none, label="conoce", color=lightgreen];
+    "Falaster Fisk" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
+    "Falaster Fisk" -> "Oogway paso veloz" [dir=none, label="conoce", color=lightgreen];
 }
