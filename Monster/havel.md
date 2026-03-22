@@ -78,4 +78,4 @@ When equipped with ***Dragon Tooth*** in both hands, Havel has immunity to magic
 
 ***Havel's Shield***. *Type:* Shield, magical. *Requirements*: Strength $16$ or higher to maintain benefical properties. *Properties*: $+3$ AC bonus. *Description*: A large, sturdy shield that provides excellent protection. *Special property*: The wielder gains resistance against bludgeoning, piercing, and slashing damage from non-magical attacks.
 
-***Havel's Armor***. *Type:* Heavy Armor, magical. *Requirements*: Strength $18$ or higher to maintain benefical properties. *Properties*: AC $18$ + Dex modifier (max $1$). *Description*: A set of heavy armor that offers superior protection. *Special property*: The wearer gains resistance to all spell damage.
+***Havel's Armor***. *Type:* Heavy Armor, magical. *Requirements*: Strength $18$ or higher to maintain benefical properties. *Properties*: AC $18$ + Dex modifier (max $1$). *Description*: A set of heavy armor that offers superior protection. *Special property*: The wearer gains advantage on saving throws against physical attacks.
