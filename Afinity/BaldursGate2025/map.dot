@@ -314,7 +314,7 @@ Puerta de Baldur
     "Zariel" -> "Asmodeus" [label="sirve a", color=green, style="dashed"];
     "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=green, style="dashed"];
 
-    "Thavius Kreeg" -> "Elturel" [dir=none, label="gobernante de", color=green, style="dashed"];
+    "Thavius Kreeg" -> "Elturel" [dir=none, label="gobernante de", color=green];
 
     // Relaciones de Puerta de Baldur
     "Puno ardiente" -> "Puerta de Baldur" [dir=none, label="opera en", color=cyan];
