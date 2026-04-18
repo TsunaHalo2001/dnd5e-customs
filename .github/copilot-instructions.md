@@ -9,6 +9,7 @@ Rules:
 - Translate structural changes into narrative:
   * New node → "Discovered [Character/Location/Faction]"
   * New edge → "Uncovered a connection/alliance/rivalry between X and Y"
-  * Modified/removed → "Learned the truth about..." or "The pact fractured"
+  * Modified/removed → "Now knows about..." or "The pact fractured"
+  * Dashed line becomes solid → "Discovered thruth behind..."
 - Never mention technical terms: DOT, graph, node, edge, file, commit, diff
 - Output only the commit message. No explanations, no markdown.
