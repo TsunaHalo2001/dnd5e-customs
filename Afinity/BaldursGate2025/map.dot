@@ -292,6 +292,12 @@ Avernus
         fillcolor=lightyellow,
         label=<<b>Candlekeep</b>>
     ];
+    "Calimshan" [
+        shape=rectangle,
+        color=orange,
+        fillcolor=lightyellow,
+        label=<<b>Calimshan</b>>
+    ];
 
     // Camino
     "Coast Way" [
@@ -356,6 +362,7 @@ Taberna<br/>Puerta de Baldur
     "Puerta de Baldur" -> "Elfsong Tavern" [dir=none];
     "Candlekeep" -> "Coast Way" [dir=none];
     "The Cloakwood" -> "Coast Way" [dir=none];
+    "Puerta de Baldur" -> "Calimshan" [dir=none, label="sur de Puerta de Baldur"];
 
     // Relaciones del lore
     // Relaciones de Zariel
