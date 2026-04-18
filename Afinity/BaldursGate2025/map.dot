@@ -251,6 +251,12 @@ Dueño de la taberna<br/>Puerta de Baldur
         fillcolor=lightgreen,
         label=<<b>Sylvira Savikas</b>>
     ];
+    "Gargauth" [
+        color=green,
+        style=filled,
+        fillcolor=lightgreen,
+        label=<<b>Gargauth</b><br/><br/>>
+    ];
 
     // Familias
     "Familia Varhampur" [
@@ -383,6 +389,7 @@ Taberna<br/>Puerta de Baldur
     // Relaciones de Thorim Oathkeeper
     "Thorim Oathkeeper" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
 
+    "Thorim Oathkeeper" -> "Gargauth" [label="porta", color=lightgreen];
     "Thorim Oathkeeper" -> "Morthos Torment" [label="confía", color=green];
     "Thorim Oathkeeper" -> "Elowen Dradir" [label="confía", color=green];
     "Thorim Oathkeeper" -> "Xenoviguroth" [label="confía", color=black];
