@@ -388,8 +388,6 @@ Taberna<br/>Puerta de Baldur
     "Sylvira Savikas" -> "Candlekeep" [dir=none, label="residente de", color=lightgreen];
 
     // Relaciones de Thorim Oathkeeper
-    "Thorim Oathkeeper" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
-
     "Thorim Oathkeeper" -> "Gargauth" [label="porta", color=lightgreen];
     "Thorim Oathkeeper" -> "Morthos Torment" [label="confía", color=green];
     "Thorim Oathkeeper" -> "Elowen Dradir" [label="confía", color=green];
@@ -409,8 +407,6 @@ Taberna<br/>Puerta de Baldur
     "Morthos Torment" -> "Reya Mantlemorn" [dir=none, label="conoce", color=lightgreen];
 
     // Relaciones de Elowen Dradir
-    "Elowen Dradir" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
-
     "Elowen Dradir" -> "Thorim Oathkeeper" [label="conoce", color=lightgreen];
     "Elowen Dradir" -> "Xenoviguroth" [dir=none, label="conoce", color=black];
     "Elowen Dradir" -> "Morlock Varhampur" [dir=none, label="conoce", color=lightgreen];
