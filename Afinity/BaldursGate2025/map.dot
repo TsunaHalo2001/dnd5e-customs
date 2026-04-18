@@ -238,6 +238,12 @@ Humana
         fillcolor=lightgreen,
         label=<<b>Falaster Fisk</b>>
     ];
+    "Sylvira Savikas" [
+        color=green,
+        style=filled,
+        fillcolor=lightgreen,
+        label=<<b>Sylvira Savikas</b>>
+    ];
 
     // Familias
     "Familia Varhampur" [
@@ -266,6 +272,28 @@ Avernus
         color=orange,
         fillcolor=lightyellow,
         label=<<b>Nacion de<br/>Elturgard</b>>
+    ];
+    "Candlekeep" [
+        shape=rectangle,
+        color=orange,
+        fillcolor=lightyellow,
+        label=<<b>Candlekeep</b>>
+    ];
+
+    // Camino
+    "Coast Way" [
+        shape=rectangle,
+        color=orange,
+        fillcolor=lightyellow,
+        label=<<b>Coast Way</b>>
+    ];
+
+    // Mazmorras
+    "The Cloakwood" [
+        shape=hexagon,
+        color=cyan,
+        fillcolor=lightgreen,
+        label=<<b>The Cloakwood</b>>
     ];
 
     // Gremios
@@ -304,6 +332,9 @@ Puerta de Baldur
 
     // Mapa
     "Elturgard" -> "Puerta de Baldur" [dir=none];
+    "Puerta de Baldur" -> "Coast Way" [dir=none];
+    "Candlekeep" -> "Coast Way" [dir=none];
+    "The Cloakwood" -> "Coast Way" [dir=none];
 
     // Relaciones del lore
     // Relaciones de Zariel
@@ -330,6 +361,9 @@ Puerta de Baldur
     "Liara Portyr" -> "Dillard Portyr" [label="nieta", color=lightgreen, style="dashed"];
     "Dillard Portyr" -> "Liara Portyr" [label="abuela", color=lightgreen, style="dashed"];
     "Liara Portyr" -> "Puno ardiente" [dir=none, label="comanda", color=lightgreen, style="dashed"];
+
+    //Relaciones de Candlekeep
+    "Sylvira Savikas" -> "Candlekeep" [dir=none, label="residente de", color=lightgreen];
 
     // Relaciones de Thorim Oathkeeper
     "Thorim Oathkeeper" -> "Puno ardiente" [dir=none, label="pertenece a", color=lightgreen];
