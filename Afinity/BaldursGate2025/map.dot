@@ -181,7 +181,7 @@ Humana
     >];
     "Liara Portyr" [
         color=green, 
-        style="filled, dashed", 
+        style="filled", 
         fillcolor=lightgreen, 
         label=<<b>Liara Portyr</b><br/><br/>
 Comandante<br/>
@@ -381,7 +381,7 @@ Taberna<br/>Puerta de Baldur
 
     "Liara Portyr" -> "Dillard Portyr" [label="nieta", color=lightgreen, style="dashed"];
     "Dillard Portyr" -> "Liara Portyr" [label="abuela", color=lightgreen, style="dashed"];
-    "Liara Portyr" -> "Puno ardiente" [dir=none, label="comanda", color=lightgreen, style="dashed"];
+    "Liara Portyr" -> "Puno ardiente" [dir=none, label="comanda", color=lightgreen];
 
     // Relaciones de Candlekeep
     "Sylvira Savikas" -> "Candlekeep" [dir=none, label="residente de", color=lightgreen];
