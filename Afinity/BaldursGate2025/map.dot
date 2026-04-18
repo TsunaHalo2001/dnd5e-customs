@@ -491,4 +491,6 @@ Taberna<br/>Puerta de Baldur
     "Alan Alyth" -> "Reya Mantlemorn" [dir=none, label="es conocida", color=lightgreen];
     "Alan Alyth" -> "Morlock Varhampur" [dir=none, label="es conocido", color=lightgreen];
     "Alan Alyth" -> "Xenoviguroth" [dir=none, label="es bien conocido", color=black];
+    "Alan Alyth" -> "Darmin Zodge" [dir=none, label="es conocido", color=lightgreen];
+
 }
