@@ -224,6 +224,13 @@ Maga<br/>
 Capitan<br/>
 Humana
     >];
+    "Alan Alyth" [
+        color=green, 
+        style="filled", 
+        fillcolor=lightgreen, 
+        label=<<b>Alan Alyth</b><br/><br/>
+Dueño de la taberna<br/>Puerta de Baldur
+    >];
 
     // Mazmorra Varhampur
     "Satiir Thione-Hhune" [
@@ -329,10 +336,18 @@ Puerta de Baldur
 Barco<br/>
 Puerta de Baldur
     >];
+    "Elfsong Tavern" [
+        shape=hexagon,
+        color=cyan,
+        fillcolor=lightgreen,
+        label=<<b>Elfsong Tavern</b><br/><br/>
+Taberna<br/>Puerta de Baldur
+    >];
 
     // Mapa
     "Elturgard" -> "Puerta de Baldur" [dir=none];
     "Puerta de Baldur" -> "Coast Way" [dir=none];
+    "Puerta de Baldur" -> "Elfsong Tavern" [dir=none];
     "Candlekeep" -> "Coast Way" [dir=none];
     "The Cloakwood" -> "Coast Way" [dir=none];
 
@@ -362,7 +377,7 @@ Puerta de Baldur
     "Dillard Portyr" -> "Liara Portyr" [label="abuela", color=lightgreen, style="dashed"];
     "Liara Portyr" -> "Puno ardiente" [dir=none, label="comanda", color=lightgreen, style="dashed"];
 
-    //Relaciones de Candlekeep
+    // Relaciones de Candlekeep
     "Sylvira Savikas" -> "Candlekeep" [dir=none, label="residente de", color=lightgreen];
 
     // Relaciones de Thorim Oathkeeper
@@ -466,4 +481,14 @@ Puerta de Baldur
     "Falaster Fisk" -> "Morthos Torment" [dir=none, label="conoce", color=lightgreen];
     "Falaster Fisk" -> "Elowen Dradir" [dir=none, label="conoce", color=lightgreen];
     "Falaster Fisk" -> "Oogway paso veloz" [dir=none, label="conoce", color=lightgreen];
+
+    // Relaciones de Elfsong Tavern
+    "Elfsong Tavern" -> "Alan Alyth" [dir=none, label="es dueño", color=lightgreen];
+    "Alan Alyth" -> "Thorim Oathkeeper" [dir=none, label="es bien recibido", color=lightgreen];
+    "Alan Alyth" -> "Morthos Torment" [dir=none, label="es bien conocido", color=lightgreen];
+    "Alan Alyth" -> "Elowen Dradir" [dir=none, label="es bien conocida", color=lightgreen];
+    "Alan Alyth" -> "Oogway paso veloz" [dir=none, label="es conocido", color=lightgreen];
+    "Alan Alyth" -> "Reya Mantlemorn" [dir=none, label="es conocida", color=lightgreen];
+    "Alan Alyth" -> "Morlock Varhampur" [dir=none, label="es conocido", color=lightgreen];
+    "Alan Alyth" -> "Xenoviguroth" [dir=none, label="es bien conocido", color=black];
 }
