@@ -300,6 +300,12 @@ Avernus
     ];
 
     // Camino
+    "Paso de la sierpe" [
+        shape=rectangle,
+        color=orange,
+        fillcolor=lightyellow,
+        label=<<b>Paso de la sierpe</b>>
+    ];
     "Coast Way" [
         shape=rectangle,
         color=orange,
@@ -358,7 +364,8 @@ Taberna<br/>Puerta de Baldur
 
     // Mapa
     "Elturgard" -> "Puerta de Baldur" [dir=none];
-    "Puerta de Baldur" -> "Coast Way" [dir=none];
+    "Puerta de Baldur" -> "Paso de la sierpe" [dir=none];
+    "Paso de la sierpe" -> "Coast Way" [dir=none];
     "Puerta de Baldur" -> "Elfsong Tavern" [dir=none];
     "Candlekeep" -> "Coast Way" [dir=none];
     "The Cloakwood" -> "Coast Way" [dir=none];
