@@ -60,7 +60,7 @@ Neutral Bueno
     // NPCs
     "Zariel" [
         color=red,
-        style="filled, dashed",
+        style="filled",
         fillcolor=lightcoral,
         label=<<b>Zariel</b><br/><br/>
 Señor de Avernus<br/>
@@ -68,7 +68,7 @@ Diablillo
     >];
     "Yael" [
         color=red,
-        style="filled, dashed",
+        style="filled",
         fillcolor=lightcoral,
         label=<<b>Yael</b><br/><br/>
 General
@@ -82,14 +82,14 @@ Almofante
     >];
     "Olanthius" [
         color=red,
-        style="filled, dashed",
+        style="filled",
         fillcolor=lightcoral,
         label=<<b>Olanthius</b><br/><br/>
 General
     >];
     "Haruman" [
         color=red,
-        style="filled, dashed",
+        style="filled",
         fillcolor=lightcoral,
         label=<<b>Haruman</b><br/><br/>
 General
@@ -373,12 +373,12 @@ Taberna<br/>Puerta de Baldur
 
     // Relaciones del lore
     // Relaciones de Zariel
-    "Yael" -> "Zariel" [label="sirve a", color=green, style="dashed"];
+    "Yael" -> "Zariel" [label="sirve a", color=green, style=""];
     "Lulu" -> "Zariel" [label="sirve a", color=green, style="dashed"];
-    "Olanthius" -> "Zariel" [label="sirve a", color=green, style="dashed"];
-    "Haruman" -> "Zariel" [label="sirve a", color=green, style="dashed"];
+    "Olanthius" -> "Zariel" [label="sirve a", color=green, style=""];
+    "Haruman" -> "Zariel" [label="sirve a", color=green, style=""];
     "Zariel" -> "Asmodeus" [label="sirve a", color=green, style="dashed"];
-    "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=green, style="dashed"];
+    "Zariel" -> "Thavius Kreeg" [dir=none, label="trato", color=green, style=""];
 
     "Thavius Kreeg" -> "Elturel" [dir=none, label="gobernante de", color=green];
 
